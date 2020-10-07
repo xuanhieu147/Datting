@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Datting</string>
+    <string name="facebook_app_id">242238417038850</string>
+    <string name="fb_login_protocol_scheme">fb242238417038850</string>
+    <string name="text_btnLoginFacebook">Continue with facebook</string>
+    <string name="text_btnLoginGoogle">Continue with Google</string>
+    <string name="title">We will never post anythings</string>
+    <string name="text_btnSignUp">Sign up with phone</string>
+    <string name="title2">Already have an account?</string>
+    <string name="text_txtSignIn"><u>Sign in</u></string>
+    <string name="your_string_here"><u> Sign in?</u>
+    </string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

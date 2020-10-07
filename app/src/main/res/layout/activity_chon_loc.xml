@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPWhite"
+    tools:context=".activity.ChonLocActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_batgap"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="Hiển thị"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/include"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+
+        />
+
+
+    <RadioGroup
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        android:background="@drawable/custom_liner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <RadioButton
+            android:id="@+id/tvNam"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="Nam"
+            android:background="@drawable/custom_radio_nam"
+            android:textColor="@drawable/custom_color_text"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/tvNu"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/custom_radionu"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="Nữ"
+            android:textColor="@drawable/custom_color_text"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/tvCaHai"
+            android:layout_width="@dimen/_27sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="Cả hai"
+            android:background="@drawable/custom_radio_cahai"
+            android:textColor="@drawable/custom_color_text"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuổi"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/minValue2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="min" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - " />
+
+            <TextView
+                android:id="@+id/maxValue2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="max" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <io.apptik.widget.MultiSlider
+        android:id="@+id/range_slider2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:thumb="@drawable/custom_thum"
+        app:drawThumbsApart="true"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:rangeColor="@color/colorPrimary"
+        app:scaleMin="18"
+        app:thumbNumber="2"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/range_slider2"
+        app:layout_constraintStart_toStartOf="@+id/range_slider2"
+        app:layout_constraintTop_toBottomOf="@+id/range_slider2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khoảng cách"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/minValue3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="min " />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" km " />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <io.apptik.widget.MultiSlider
+        android:id="@+id/range_slider3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:thumb="@drawable/custom_thum"
+        app:drawThumbsApart="true"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout2"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+        app:rangeColor="@color/colorPrimary"
+        app:thumbNumber="2"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Áp dụng"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPWhite"
+        android:textSize="@dimen/_16sdp"
+        android:background="@drawable/custom_button_2"
+        app:layout_constraintEnd_toEndOf="@+id/range_slider3"
+        app:layout_constraintStart_toStartOf="@+id/range_slider3"
+        app:layout_constraintTop_toBottomOf="@+id/range_slider3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

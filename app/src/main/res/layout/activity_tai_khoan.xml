@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPWhite"
+    tools:context=".activity.TaiKhoanActivity">
+
+    <net.igenius.customcheckbox.CustomCheckBox
+        android:id="@+id/customCheckBox2"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:background="@drawable/custom_checkbox"
+        android:layout_marginEnd="232dp"
+        android:layout_marginRight="232dp"
+        app:color_checked="@color/colorPrimary"
+        app:color_tick="@android:color/white"
+        app:color_unchecked="@color/colorPWhite"
+        app:color_unchecked_stroke="@color/colorPWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/customCheckBox"
+        app:small_tick="true" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/chonloc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/imgback"
+                android:src="@drawable/back" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Chọn lọc"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:text="Lưu"
+                android:textColor="@color/colorTim"
+                android:textSize="@dimen/_16sdp" />
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tvHoTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Họ tên"
+        android:textSize="@dimen/_8sdp"
+        app:layout_constraintStart_toStartOf="@+id/toolbar2"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+    <TextView
+        android:id="@+id/tvNgaySinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Ngày sinh"
+        android:textSize="@dimen/_8sdp"
+        app:layout_constraintStart_toStartOf="@+id/edName"
+        app:layout_constraintTop_toBottomOf="@+id/edName" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Giới tính"
+        android:textSize="@dimen/_8sdp"
+        app:layout_constraintStart_toStartOf="@+id/edDate"
+        app:layout_constraintTop_toBottomOf="@+id/edDate" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Nam"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/customCheckBox"
+        app:layout_constraintStart_toEndOf="@+id/customCheckBox"
+        app:layout_constraintTop_toTopOf="@+id/customCheckBox" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Nữ"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/customCheckBox2"
+        app:layout_constraintStart_toEndOf="@+id/customCheckBox2"
+        app:layout_constraintTop_toTopOf="@+id/customCheckBox2" />
+
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar2"
+        app:layout_constraintStart_toStartOf="@+id/tvHoTen"
+        app:layout_constraintTop_toBottomOf="@+id/tvHoTen" />
+
+    <EditText
+        android:id="@+id/edDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar2"
+        app:layout_constraintStart_toStartOf="@+id/tvNgaySinh"
+        app:layout_constraintTop_toBottomOf="@+id/tvNgaySinh" />
+
+    <net.igenius.customcheckbox.CustomCheckBox
+        android:id="@+id/customCheckBox"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:background="@drawable/custom_checkbox"
+        android:layout_marginTop="16dp"
+        app:color_checked="@color/colorPrimary"
+        app:color_tick="@android:color/white"
+        app:color_unchecked="@color/colorPWhite"
+        app:color_unchecked_stroke="@color/colorPWhite"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:small_tick="true" />
+</androidx.constraintlayout.widget.ConstraintLayout>

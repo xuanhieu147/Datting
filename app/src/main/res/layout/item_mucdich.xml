@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="@dimen/_16sdp"
+    android:layout_marginRight="@dimen/_16sdp"
+   >
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="@dimen/_16sdp"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <net.igenius.customcheckbox.CustomCheckBox
+        android:id="@+id/cb5"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_checkbox"
+        app:color_checked="@color/hong"
+        app:color_tick="@android:color/white"
+        app:color_unchecked="@color/colorPWhite"
+        app:color_unchecked_stroke="@color/colorPWhite"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:small_tick="true" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Tìm bạn mới"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/cb5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cb5"
+        app:layout_constraintTop_toTopOf="@+id/cb5" />
+
+    <net.igenius.customcheckbox.CustomCheckBox
+        android:id="@+id/cb6"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_checkbox"
+        app:color_checked="@color/hong"
+        app:color_tick="@android:color/white"
+        app:color_unchecked="@color/colorPWhite"
+        app:color_unchecked_stroke="@color/colorPWhite"
+        app:layout_constraintStart_toStartOf="@+id/cb5"
+        app:layout_constraintTop_toBottomOf="@+id/cb5"
+        app:small_tick="true" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Để chat"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/cb6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/cb6"
+        app:layout_constraintTop_toTopOf="@+id/cb6" />
+
+    <net.igenius.customcheckbox.CustomCheckBox
+        android:id="@+id/cb7"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_checkbox"
+        app:color_checked="@color/hong"
+        app:color_tick="@android:color/white"
+        app:color_unchecked="@color/colorPWhite"
+        app:color_unchecked_stroke="@color/colorPWhite"
+        app:layout_constraintStart_toStartOf="@+id/cb6"
+        app:layout_constraintTop_toBottomOf="@+id/cb6"
+        app:small_tick="true" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Tìm một người bạn thân"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/cb7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cb7"
+        app:layout_constraintTop_toTopOf="@+id/cb7" />
+
+    <net.igenius.customcheckbox.CustomCheckBox
+        android:id="@+id/cb8"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_checkbox"
+        app:color_checked="@color/hong"
+        app:color_tick="@android:color/white"
+        app:color_unchecked="@color/colorPWhite"
+        app:color_unchecked_stroke="@color/colorPWhite"
+        app:layout_constraintStart_toStartOf="@+id/cb7"
+        app:layout_constraintTop_toBottomOf="@+id/cb7"
+        app:small_tick="true" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Tìm kiếm một mối quan hệ nghiêm túc"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/cb8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cb8"
+            app:layout_constraintTop_toTopOf="@+id/cb8" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:text="Tôi ở đây để?"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

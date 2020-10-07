@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.RuouBiaFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/xanh">
+
+        <ImageButton
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/custom_close"
+            android:src="@drawable/ic_baseline_close_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_action_wine_white" />
+
+        <TextView
+            android:id="@+id/tvChieuCao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Rượu bia"
+            android:textColor="@color/colorPWhite"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/custom_liner2"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvChieuCao"
+            app:layout_constraintVertical_bias="0.0">
+
+            <net.igenius.customcheckbox.CustomCheckBox
+                android:id="@+id/cb4"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/custom_checkbox"
+                app:color_checked="#8d18ff"
+                app:color_tick="@android:color/white"
+                app:color_unchecked="@color/colorPWhite"
+                app:color_unchecked_stroke="@color/colorPWhite"
+                app:layout_constraintStart_toStartOf="@+id/cb3"
+                app:layout_constraintTop_toBottomOf="@+id/cb3"
+                app:small_tick="true" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Không hiển thị"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/cb4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cb4"
+                app:layout_constraintTop_toTopOf="@+id/cb4" />
+
+            <net.igenius.customcheckbox.CustomCheckBox
+                android:id="@+id/cb3"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/custom_checkbox"
+                app:color_checked="#8d18ff"
+                app:color_tick="@android:color/white"
+                app:color_unchecked="@color/colorPWhite"
+                app:color_unchecked_stroke="@color/colorPWhite"
+                app:layout_constraintStart_toStartOf="@+id/cb2"
+                app:layout_constraintTop_toBottomOf="@+id/cb2"
+                app:small_tick="true" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Tôi ghét rượu bia"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/cb3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cb3"
+                app:layout_constraintTop_toTopOf="@+id/cb3" />
+
+            <net.igenius.customcheckbox.CustomCheckBox
+                android:id="@+id/cb2"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/custom_checkbox"
+                app:color_checked="#8d18ff"
+                app:color_tick="@android:color/white"
+                app:color_unchecked="@color/colorPWhite"
+                app:color_unchecked_stroke="@color/colorPWhite"
+                app:layout_constraintStart_toStartOf="@+id/cb"
+                app:layout_constraintTop_toBottomOf="@+id/cb"
+                app:small_tick="true" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Không uống rượu bia"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/cb2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cb2"
+                app:layout_constraintTop_toTopOf="@+id/cb2" />
+
+            <net.igenius.customcheckbox.CustomCheckBox
+                android:id="@+id/cb"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/custom_checkbox"
+                app:color_checked="#8d18ff"
+                app:color_tick="@android:color/white"
+                app:color_unchecked="@color/colorPWhite"
+                app:color_unchecked_stroke="@color/colorPWhite"
+                app:layout_constraintStart_toStartOf="@+id/cb1"
+                app:layout_constraintTop_toBottomOf="@+id/cb1"
+                app:small_tick="true" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Tôi thích uống rượu"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/cb"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cb"
+                app:layout_constraintTop_toTopOf="@+id/cb" />
+
+            <net.igenius.customcheckbox.CustomCheckBox
+                android:id="@+id/cb1"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/custom_checkbox"
+                app:color_checked="#8d18ff"
+                app:color_tick="@android:color/white"
+                app:color_unchecked="@color/colorPWhite"
+                app:color_unchecked_stroke="@color/colorPWhite"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:small_tick="true" />
+
+            <net.igenius.customcheckbox.CustomCheckBox
+                android:id="@+id/customCheckBox"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/custom_checkbox"
+                app:color_checked="@color/colorTim"
+                app:color_tick="@android:color/white"
+                app:color_unchecked="@color/colorPWhite"
+                app:color_unchecked_stroke="@color/colorPWhite"
+                app:layout_constraintBottom_toTopOf="@+id/tvBoQua"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:small_tick="true" />
+
+            <TextView
+                android:id="@+id/tvBoQua"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:gravity="center"
+                android:text="Bỏ qua"
+                android:textSize="@dimen/_13sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Thường xuyên uống rượu bia"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_15sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/cb1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cb1"
+                app:layout_constraintTop_toTopOf="@+id/cb1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

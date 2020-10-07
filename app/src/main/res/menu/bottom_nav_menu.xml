@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_laban"
+        android:icon="@drawable/ic_action_laban"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_dnoname"
+        android:icon="@drawable/ic_action_noname"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_chat"
+        android:icon="@drawable/ic_action_chat"
+        android:title="" />
+    <item
+        android:id="@+id/navigation_accounts"
+        android:icon="@drawable/ic_action_accounts"
+        android:title="" />
+</menu>
